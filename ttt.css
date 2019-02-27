@@ -1,0 +1,190 @@
+header, main, nav, footer, figure, figcaption, aside, section, article {display: block;}
+body {background-color: #D5F2BF;
+    background: linear-gradient(#ABC4D6,#D5F2BF);
+    color: #666666; 
+    font-family: "Trebuchet MS",sans-serif, Arial;}
+header {background-color: #FFFF98; 
+    position:fixed,absolute;
+    text-align: center;
+	top:0px;
+	padding: 15px 5px 15px 175px;
+    width: auto;}
+h1 {margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Trebuchet MS","comic sans ms", sans-serif;
+    color: #EF9C9C;
+    font-size: 2em;
+    letter-spacing: 10px;}
+    
+/* Dropdown Button */
+.dropbtn {background-color: #ACCFB4;
+  color: white;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-family: "Trebuchet MS","comic sans ms", sans-serif;
+  border: none;}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {position: relative;
+  display: inline-block;}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {display: none;
+  position: relative;
+  background-color: #fdf1f1;
+  min-width: 210px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;}
+/* Links inside the dropdown */
+.dropdown-content a {padding: 12px 16px;
+  text-decoration: none;
+  display: block;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #F2C3C3;}
+
+
+
+
+nav { overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    float:left;
+    top:10px;  
+    font-weight: bold;
+    padding: 20px;
+    width: auto;}
+nav a {text-decoration: none;}
+nav a:link {color: #F078BE7;
+    font-family: "Trebuchet MS","comic sans ms", sans-serif;}
+nav a:visited { color: #5092C1;}
+main {padding: 1px 20px 20px 30px;
+    display: block;
+    margin-top: 10px; /* Add a top margin to avoid content overlay */
+    background-color: #FFFFFF}
+main ul {list-style-position: inside;}
+h2 {color: #00A0AE;
+    font-family: "Trebuchet MS","comic sans ms", sans-serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
+    margin-top: 30px;}
+h3 {color: #ACC4E9;
+    font-family: "Trebuchet MS","comic sans ms", sans-serif;
+    text-decoration: none;
+}
+h4 {color: #FF3030;
+    font-family: "Trebuchet MS","comic sans ms", sans-serif;}
+ul {list-style-image: url(marker.gif);}
+table {border: 1px solid #3399CC;
+    border-spacing:0;}
+td th {padding: 5px 10px 5px;
+	border: 0.5px solid #3399CC;}
+td {text-align: center;}
+.text {text-align: left;}
+tr:nth-of-type(odd) {background-color: #FFFFCC;} 
+footer {font-size: .75em;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 20px;
+    background-color: #FFFF98}
+dt {color: #000033;}
+label {float: left;
+    display: block;
+    text-align: right;
+    width: 120px;}
+input, textarea { display: block;
+    margin-bottom: 20px;}
+video, embed {position: relative; 
+    padding: 20px 100px 30px 100px;}
+#submit {margin-left: 200px;}
+.boba {color: #5CAFA3;
+    font-weight: bold;}
+#contact {font-size: .9em}
+#wrapper {width: 80%;
+    margin-left: auto;
+	margin-right: auto;
+    min-width: 960px; 
+    max-width: 2048px;
+    background: #FFFF98;}
+
+
+/* Slideshow container */
+.slideshow-container { max-width: 500px;
+  float:left;
+  margin: 20px;}
+/* Hide the images by default */
+.mySlides {  display:none;}
+.text {  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;}
+/* The dots/bullets/indicators */
+.dot {  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+.active, .dot:hover {  background-color: #717171;}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+#mobile {display: none;}
+#desktop {display: inline;}
+
+@media only screen and (max-width: 64em)
+{
+	body {margin: 0; 
+	    background-color: #FFFFFF;}
+	#wrapper {min-width: 0; width: auto; box-shadow:none;}
+	nav {float: none; 
+	width: auto;
+	text-align: center;
+	padding: 0.5em;}
+	nav li {display: inline-block;}
+	main {margin-left: 0;}
+	footer{margin: 0;}
+}
+@media only screen and (max-width: 37.5em)
+{
+    header {padding:1em 0em 0em 0em;}
+    h1 {font-size: 1.5em;    }
+	body {margin: 0; 
+	    background-color: #FFFFFF;}
+	nav {padding: 0;
+	    top:50px;
+	    float:none;}
+	nav li {display: block;
+	    margin: 0;
+	    border-bottom: 2px solid #330000;}
+	nav ul{display: block;}
+	main {padding: 1em;
+	    margin-left: 0
+	    margin-top: 100px; 
+	    font-size: 90%;}
+	label {float: none; 
+	    text-align: left;}
+	input[type="submit"]{ margin-left: 0; }
+	footer {margin: 0;}
+	#mobile {display: inline;}
+    #desktop {display: none;}
+}

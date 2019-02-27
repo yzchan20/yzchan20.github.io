@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ttt.css">
+    <title>TTT ~ Mango Rabbit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tempe Tea Time provides quality reviews of local boba drink places for ASU students.">
+    <meta name="referrer" content ="origin">
+    <!--[if lt IE 9]>
+    <script src="
+    http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>TEMPE TEA TIME</h1>
+    </header>
+<div class="navbar">
+    <nav>
+        <div class="dropdown">
+        <button class="dropbtn">• M • E • N • U •</button>
+        <div class="dropdown-content">
+            <a href="index.html"> Home </a>
+            <a href="bubble.html"> Bubbleology </a>
+            <a href="dayung.html"> Dayung's Tea </a>
+            <a href="itea.html"> iTea </a>
+            <a href="kungfu.html"> Kung Fu Tea </a>
+            <a href="mango.html"> Mango Rabbit </a>
+            <a href="swirl.html"> Tea Swirl </a>
+            <a href="urban.html"> Urban Boba </a>
+        </div>
+        </div>
+    </nav>
+</div>    
+<main>
+    <h2>Mango Rabbit</h2>
+    <p>
+       A personal favorite of many international students, with its adorable interior design and unique style. A little ways from campus but is a quiet study spot. Oh do you know about the HUGE line bear??
+    </p>
+    
+<div class="slideshow">
+    <div class="mySlides fade">
+        <img src="5.front.jpg" style="width:100%">
+        <div>Front</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="5.room.jpg" style="width:100%">
+        <div>Room</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="5.drink.jpg" style="width:100%">
+        <div>Drinks</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="5.decor.jpg" style="width:100%">
+        <div>Decor</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="5.tea.jpg" style="width:100%">
+        <div>Tea</div>
+    </div>
+    <div class="mySlides fade">
+        <img src="5.cashier.jpg" style="width:100%">
+        <div>Cashier</div>
+    </div>
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+    
+<script>
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}    
+</script>  
+
+<p>
+    <h3><a href="https://www.facebook.com/MangoRabbitTempe/">Facebook</a></h3>
+    
+</p>
+
+<video width="320" height="240" controls="controls">
+    <source src="mango_vid.mp4" type="video/mp4">
+</video>
+
+    <table border="1">
+    <tr>
+        <th>Criteria</th>
+		<th>Scale</th>
+        <th>Score</th>
+        <th>Comments</th>
+    </tr>
+     <tr>
+        <td>Environment</td>
+        <td>10/10</td>
+        <td>9/10</td>
+        <td>Goog lighting, aesthetic, photogenic, quiet</td>
+    </tr>
+    <tr>
+        <td>Parking</td>
+        <td>10/10</td>
+        <td>8/10</td>
+        <td>Plenty of parking</td>
+    </tr>
+    <tr>
+        <td>Seating</td>
+        <td>10/10</td>
+        <td>9/10</td>
+        <td>Many booths and tables</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>10/10</td>
+        <td>3/10</td>
+        <td>$3.75 - $5.95</td>
+    </tr><tr>
+        <td>Tea Quality</td>
+        <td>10/10</td>
+        <td>7/10</td>
+        <td>Fruit flavors are overwhelming, tea flavor not as strong</td>
+    </tr>
+    <tr>
+        <td>Boba Quality</td>
+        <td>10/10</td>
+        <td>7/10</td>
+        <td>Soft, supple, kinda sweet</td>
+    </tr>
+    <tr>
+        <td>Dairy Free Options</td>
+        <td>Y/N</td>
+        <td>Y</td>
+        <td>Dairy free creamer</td>
+    </tr>
+    <tr>
+        <td>Size Options</td>
+        <td>Y/N</td>
+        <td>Y</td>
+        <td>Medium, large</td>
+    </tr>
+    <tr>
+        <td>Food</td>
+        <td>Y/N</td>
+        <td>Y</td>
+        <td>Asian foods</td>
+    </tr>
+    <tr>
+        <td>Topping Options</td>
+        <td>10/10</td>
+        <td>8/10</td>
+        <td>Boba, grass/coconut jelly, pudding, crema</td>
+    </tr>
+    <tr>
+        <td>Rewards Systems</td>
+        <td>Y/N</td>
+        <td>Y</td>
+        <td>Five Star</td>
+    </tr>
+    <tr>
+        <td>Wifi</td>
+        <td>Y/N</td>
+        <td>Y</td>
+        <td>Spotty</td>
+    </tr>
+        <tr>
+        <td>Study Worthy</td>
+        <td>10/10</td>
+        <td>6.5/10</td>
+        <td>Lots of booths;not a lot of plugs, less foot traffic</td>
+    </tr>
+    <tr>
+        <td>Overall Impression</td>
+        <td>10/10</td>
+        <td>6-7/10</td>
+        <td>Very popular with Asian intrnational students, but is pricy</td>
+    </tr>    
+    </table>
+    
+<h3>Map</h3>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(33.3948745,-111.9406277),
+  zoom:15,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVh0lwO8cCA07kBjXOVyiTIB3pY6dfiIA&callback=myMap"></script>
+
+
+    <p></p>
+       <h3>Have any comments or concerns?</h3>
+    <p>Required fields are marked with an asterisk *</p>
+    <form method="post" action="https://formspree.io/yzchan@asu.edu" method="POST">
+        <label for="myName">*Name:</label>
+            <input type="text" name="myFName" id="myFName" required="required">
+        <label for="myEmail">*E-mail:</label>
+             <input type="email" name="myEmail" id="myEmail" size="35" required="required">
+        <label for="myComments">*Comments:</label>
+             <textarea name="myComments" id="myComments" rows="2" cols="30" required="required"></textarea>
+        <input type="submit" value="Submit">
+</main>
+<footer>
+    Copyright © 2019 Tempe Tea Time
+    <br>
+    <a href="mailto:yvonna@chan.com">yvonna@chan.com</a>
+</footer>
+</div>
+</body>
+</html>
